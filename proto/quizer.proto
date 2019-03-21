@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package proto;
+
+
+// Interface exported by the server
+service Quizer {
+    // server-to-client streaming RPC
+    // Questions are streamed rather than returned at once
+    // in order to serve a bigger number of questions
+    rpc ListQuestions(Empty) returns (stream Question) {}
+
+    // client-to-server streaming RPC
+    // Accepts a stream of Answers and
+    // returns a Result after all the answers are submitted
+    rpc RecordAnswers(stream Answer) returns (Result) {}
+}
+
+message Question {
+    int64 id = 1;  // unique id
+    string text = 2;
+
+    message Option {
+        int64 id = 1;
+        string text = 2;
+    }
+
+    map<int64, Option> options = 4;
+}
+
+message ServerQuestion {
+    Question question = 1;
+    int64 correct_answer = 2;
+}
+
+message Answer {
+    int64 question_id = 1;
+    int64 option_id = 2;
+}
+
+message Result {
+    int32 correct_answers = 1;
+    int32 better_then = 2;
+    float elapsed_time = 3;
+}
+
+// quick fix and replacement for google.protobuf.Empty file not found error
+message Empty {}

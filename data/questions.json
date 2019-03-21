@@ -1,0 +1,115 @@
+{
+    "1": {
+        "question": {
+            "id": 1,
+            "text": "Does Go support method overloading?",
+            "options": {
+                "1": {
+                    "id": 1,
+                    "text": "Yes"
+                },
+                "2": {
+                    "id": 2,
+                    "text": "No"
+                }
+            }
+        },
+        "correct_answer": 1
+    },
+
+    "2": {
+        "question": {
+            "id": 2,
+            "text": "Which of the following is a derived type in Go?",
+            "options": {
+                "1": {
+                    "id": 1,
+                    "text": "Pointer types"
+                },
+                "2": {
+                    "id": 2,
+                    "text": "Array types"
+                },
+                "3": {
+                    "id": 3,
+                    "text": "Structure types"
+                },
+                "4": {
+                    "id": 4,
+                    "text": "All options are correct"
+                }
+            }
+        },
+        "correct_answer": 4
+    },
+
+    "3": {
+        "question": {
+            "id": 4,
+            "text": "Can a Go function be created on the fly and used as values?",
+            "options": {
+                "1": {
+                    "id": 1,
+                    "text": "Yes"
+                },
+                "2": {
+                    "id": 2,
+                    "text": "No"
+                }
+            }
+        },
+        "correct_answer": 1
+    },
+
+    "4": {
+        "question": {
+            "id": 4,
+            "text": "What's another name for Go?",
+            "options": {
+                "1": {
+                    "id": 1,
+                    "text": "Golang"
+                },
+                "2": {
+                    "id": 2,
+                    "text": "Goooglelang"
+                },
+                "3": {
+                    "id": 3,
+                    "text": "Gopher"
+                },
+                "4": {
+                    "id": 4,
+                    "text": "Gopherlang"
+                }
+            }
+        },
+        "correct_answer": 1
+    },
+
+    "5": {
+        "question": {
+            "id": 5,
+            "text": "Where was the language created?",
+            "options": {
+                "1": {
+                    "id": 1,
+                    "text": "Grocery store"
+                },
+                "2": {
+                    "id": 2,
+                    "text": "Google"
+                },
+                "3": {
+                    "id": 3,
+                    "text": "Apple"
+                },
+                "4": {
+                    "id": 4,
+                    "text": "Microsoft"
+                }
+            }
+        },
+        "correct_answer": 2
+    }
+}

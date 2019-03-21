@@ -1,0 +1,8 @@
+version: "3"
+services:
+  quizer:
+    container_name: quizer
+    build: .
+    entrypoint: quizer server
+    ports:
+      - "3000:3000"
