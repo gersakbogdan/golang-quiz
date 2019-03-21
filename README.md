@@ -1,6 +1,6 @@
-# Fasttrack Code Test Solution
+# Quiz Test Solution
 
-Golang implementation for Fasttrack super simple quiz.
+Golang implementation for super simple quiz.
 
 ### Implementation Stack
 
